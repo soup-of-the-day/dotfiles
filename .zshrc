@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # zsh theme (https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 ZSH_THEME="robbyrussell"
 
-ZSH_CUSTOM=".omz-custom"
+ZSH_CUSTOM=$HOME/.omz-custom
 plugins=(
 	git
 	z
