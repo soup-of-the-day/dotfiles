@@ -8,7 +8,11 @@ ZSH_THEME="robbyrussell"
 ZSH_CUSTOM=".omz-custom"
 plugins=(
 	git
+	z
+	golang
 
+
+	# plugins residing in .omz-custom
 	zsh-autosuggestions
 	fast-syntax-highlighting
 )
