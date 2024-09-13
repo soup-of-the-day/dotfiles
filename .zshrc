@@ -5,7 +5,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # zsh theme (https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+ZSH_CUSTOM=".omz-custom"
+plugins=(
+	git
+	zsh-autosuggestions
+)
 
 
 source $ZSH/oh-my-zsh.sh
