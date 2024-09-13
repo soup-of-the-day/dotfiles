@@ -10,7 +10,7 @@ plugins=(
 	git
 	z
 	golang
-
+	fzf
 
 	# plugins residing in .omz-custom
 	zsh-autosuggestions
