@@ -1,5 +1,14 @@
 # Env Setup
-eval $(/opt/homebrew/bin/brew shellenv)
+os=$(uname)
+if [[ $os == "Linux" ]]; then
+	export BREW_HOME="/home/linuxbrew/.linuxbrew/bin"
+	export PATH="$PATH:$BREW_HOME"
+elif [[ $os == "Darwin" ]]; then
+	eval $(/opt/homebrew/bin/brew shellenv)
+fi
+
+
+
 export ZSH="$HOME/.oh-my-zsh"
 
 # zsh theme (https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)
