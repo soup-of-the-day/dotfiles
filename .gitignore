@@ -4,10 +4,10 @@
 // ...except these files
 !.gitignore
 !README.md
-
 !.zshrc
 
 // TODO - can't actually get this to work for directories
 // git is ignoring .omz-custom even with the exception
 // had to workaround with git add -f
 !.omz-custom/*
+!.config/nvim/*
