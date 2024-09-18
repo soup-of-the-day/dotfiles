@@ -683,7 +683,7 @@ require('lazy').setup({
     priority = 1000,
     init = function()
       -- Load the colorscheme here.
-      vim.cmd.colorscheme 'catppuccin-frappe'
+      vim.cmd.colorscheme 'catppuccin-mocha'
     end,
   },
 
