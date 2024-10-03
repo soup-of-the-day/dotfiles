@@ -28,3 +28,9 @@ plugins=(
 
 
 source $ZSH/oh-my-zsh.sh
+
+# use nvim when editing files using kubectl
+export KUBE_EDITOR="/opt/homebrew/bin/nvim"
+
+# Im just tired of typing kubectl
+alias k="kubectl"
