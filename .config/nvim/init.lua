@@ -8,8 +8,17 @@ vim.g.have_nerd_font = true
 -- See `:help vim.opt`
 -- For more options, you can see `:help option-list`
 
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Make line numbers default
 vim.opt.number = true
+
+-- relative line numbesr
+vim.opt.relativenumber = true
+
+-- keep the cursor a blocks
+vim.opt.guicursor = ''
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
@@ -484,6 +493,7 @@ require('lazy').setup({
       local servers = {
         clangd = {},
         gopls = {},
+        -- ts_ls = {},
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
