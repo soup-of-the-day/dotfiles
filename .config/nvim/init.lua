@@ -306,7 +306,7 @@ require('lazy').setup({
           builtin.find_files(opts)
         end
       end
-      vim.keymap.set('n', '<leader>sf', find_files_opts { hidden = true }, { desc = '[S]earch [F]iles' })
+      vim.keymap.set('n', '<leader>sf', find_files_opts {}, { desc = '[S]earch [F]iles' })
 
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
