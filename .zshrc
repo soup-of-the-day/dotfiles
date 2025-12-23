@@ -33,3 +33,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Im just tired of typing kubectl
 alias k="kubectl"
+
+. "$HOME/.local/bin/env"

@@ -484,8 +484,8 @@ require('lazy').setup({
         clangd = {},
         gopls = {},
         -- ts_ls = {},
-        -- pyright = {},
-        -- rust_analyzer = {},
+        pyright = {},
+        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -577,6 +577,7 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         go = { 'gopls' },
+        rust = { 'rustfmt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
@@ -686,12 +687,12 @@ require('lazy').setup({
   },
   {
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'rebelot/kanagawa.nvim',
+    name = 'kanagawa',
     priority = 1000,
     init = function()
       -- Load the colorscheme here.
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'kanagawa-wave'
     end,
   },
 
